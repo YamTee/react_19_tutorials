@@ -1,7 +1,7 @@
-import './App.css'
+import "./App.css";
 
-function Button(){
-    return <button className="button">Click Me!</button>
+function Button() {
+  return <button className="button">Click Me!</button>;
 }
 
 export default Button;

@@ -1,3 +1,3 @@
 export const Welcome = () => {
-    return <div>Welcome YamTee!</div>
-}
+  return <div>Welcome YamTee!</div>;
+};
