@@ -10,10 +10,12 @@ import { Product } from "./Product.jsx";
 
 import { Alert } from "./Alert.jsx";
 
+import { Counter } from "./Counter.jsx";
+
 function App() {
   return (
-    <>
-      <section id="center">
+    <div className="flex min-h-screen items-center justify-center">
+      <div className="w-full max-w-sm rounded-xl bg-black p-6 shadow-lg">
         <Alert>
           <p>Saved Successfully!</p>
         </Alert>
@@ -37,8 +39,10 @@ function App() {
 
         <Plan />
         <Product />
-      </section>
-    </>
+
+        <Counter />
+      </div>
+    </div>
   );
 }
 
