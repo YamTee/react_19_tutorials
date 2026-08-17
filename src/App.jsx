@@ -12,11 +12,18 @@ import { Alert } from "./Alert.jsx";
 
 import { Counter } from "./Counter.jsx";
 
+import { CounterWithReducer } from "./CounterWithReducer";
+
+import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
+
+import { UserContextProvider } from "./UserContextProvider.jsx";
+import { UserDetailsFromUserContext } from "./UserDetailsFromUserContext.jsx";
+
 function App() {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <div className="w-full max-w-sm rounded-xl bg-black p-6 shadow-lg">
-        <Alert>
+      <div className="w-full rounded-xl bg-black p-6 shadow-lg">
+        {/* <Alert>
           <p>Saved Successfully!</p>
         </Alert>
 
@@ -41,6 +48,19 @@ function App() {
         <Product />
 
         <Counter />
+
+        <br />
+        <br />
+
+        <br />
+
+        <CounterWithReducer /> */}
+
+        {/* <ShoppingCartWithReducer /> */}
+
+        <UserContextProvider>
+          <UserDetailsFromUserContext />
+        </UserContextProvider>
       </div>
     </div>
   );
