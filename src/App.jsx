@@ -18,6 +18,7 @@ import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
 
 import { UserContextProvider } from "./UserContextProvider.jsx";
 import { UserDetailsFromUserContext } from "./UserDetailsFromUserContext.jsx";
+import { Stopwatch } from "./Stopwatch.jsx";
 
 function App() {
   return (
@@ -58,9 +59,11 @@ function App() {
 
         {/* <ShoppingCartWithReducer /> */}
 
-        <UserContextProvider>
+        {/* <UserContextProvider>
           <UserDetailsFromUserContext />
-        </UserContextProvider>
+        </UserContextProvider> */}
+
+        <Stopwatch />
       </div>
     </div>
   );
