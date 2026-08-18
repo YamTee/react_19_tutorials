@@ -19,6 +19,7 @@ import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
 import { UserContextProvider } from "./UserContextProvider.jsx";
 import { UserDetailsFromUserContext } from "./UserDetailsFromUserContext.jsx";
 import { Stopwatch } from "./Stopwatch.jsx";
+import { UseEffectComp } from "./UseEffectComp";
 
 function App() {
   return (
@@ -63,7 +64,9 @@ function App() {
           <UserDetailsFromUserContext />
         </UserContextProvider> */}
 
-        <Stopwatch />
+        {/* <Stopwatch /> */}
+
+        <UseEffectComp />
       </div>
     </div>
   );
