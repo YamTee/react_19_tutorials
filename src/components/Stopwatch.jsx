@@ -6,18 +6,25 @@ export const Stopwatch = () => {
   const intervalRef = useRef(null);
 
   const start = () => {
-    intervalRef.current = setInterval(() => {
-      setTime((prev) => prev + 1);
-    }, 1000);
+    console.log(intervalRef.current);
+
+    if (!intervalRef.current) {
+      intervalRef.current = setInterval(() => {
+        setTime((prev) => prev + 1);
+      }, 1000);
+    }
   };
 
   const stop = () => {
     clearInterval(intervalRef.current);
+
+    intervalRef.current = null;
   };
 
   const reset = () => {
     clearInterval(intervalRef.current);
     setTime(0);
+    intervalRef.current = null;
   };
 
   return (

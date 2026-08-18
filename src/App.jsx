@@ -1,30 +1,19 @@
 import "./App.css";
-import { Welcome } from "./Welcome";
-import Button from "./Button";
-import { UserDetails } from "./UserDetails";
-import { ParentComponent } from "./ParentComponent.jsx";
 
-import { Plan } from "./Plan.jsx";
+import { Routes, Route } from "react-router-dom";
 
-import { Product } from "./Product.jsx";
-
-import { Alert } from "./Alert.jsx";
-
-import { Counter } from "./Counter.jsx";
-
-import { CounterWithReducer } from "./CounterWithReducer";
-
-import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
-
-import { UserContextProvider } from "./UserContextProvider.jsx";
-import { UserDetailsFromUserContext } from "./UserDetailsFromUserContext.jsx";
-import { Stopwatch } from "./Stopwatch.jsx";
-import { UseEffectComp } from "./UseEffectComp";
+import { Home } from "./components/Home";
+import { Stopwatch } from "./components/Stopwatch";
 
 function App() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="w-full rounded-xl bg-black p-6 shadow-lg">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="stopwatch" element={<Stopwatch />} />
+        </Routes>
+
         {/* <Alert>
           <p>Saved Successfully!</p>
         </Alert>
@@ -65,8 +54,6 @@ function App() {
         </UserContextProvider> */}
 
         {/* <Stopwatch /> */}
-
-        <UseEffectComp />
       </div>
     </div>
   );
